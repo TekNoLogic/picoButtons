@@ -1,6 +1,6 @@
 picoButtons creates a set of "LibDataBroker":http://github.com/tekkub/libdatabroker-1-1 launchers for the micro buttons (those buttons between the actionbar and bag bar in the default interface).
 
-<em> picoFriends does not provide it's own display, you will need a LDB-based quicklaunch addon. </em>
+<em> picoButtons does not provide it's own display, you will need a LDB-based quicklaunch addon. </em>
 
 h2. Links
 
