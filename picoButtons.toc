@@ -1,0 +1,19 @@
+## Interface: 20400
+
+## Title: picoButtons
+## Notes: LDB launcher micro buttons
+## Author: Tekkub Stoutwrithe
+## Version: Alpha
+## X-Website: http://www.tekkub.net/
+## X-Email: tekkub-wow@googlegroups.com
+## X-Category: Misc
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+LibStub.lua
+tekKonfigAboutPanel.lua
+CallbackHandler-1.0.lua
+LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+picoButtons.lua
