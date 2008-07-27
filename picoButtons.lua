@@ -19,6 +19,7 @@ end
 helper("Character", CharacterMicroButton, CHARACTER_BUTTON, "Interface\\GroupFrame\\UI-Group-LeaderIcon")
 helper("Spellbook", SpellbookMicroButton, SPELLBOOK_ABILITIES_BUTTON)
 helper("Talents", TalentMicroButton, TALENTS_BUTTON)
+helper("Achievement", AchievementMicroButton, ACHIEVEMENT_BUTTON)
 helper("Quest", QuestLogMicroButton, QUESTLOG_BUTTON)
 helper("Socials", SocialsMicroButton, SOCIAL_BUTTON)
 helper("LFG", LFGMicroButton, LFG_BUTTON)
