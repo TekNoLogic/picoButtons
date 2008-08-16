@@ -1,3 +1,6 @@
+3.0.1.2-Beta
+    Update for Wrath
+
 2.4.3.1-Beta
     And so it begins...
 
