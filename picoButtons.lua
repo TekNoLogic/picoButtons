@@ -17,7 +17,10 @@ local function helper(title, button, label, icon, coords, click)
 end
 
 
-helper("Character", CharacterMicroButton, CHARACTER_BUTTON, "Interface\\GroupFrame\\UI-Group-LeaderIcon")
+local x = MainMenuMicroButton:GetScript("OnMouseUp")
+local function mainmenu(self, ...) self.down = 1; x(self, ...) end
+
+helper("Character", CharacterMicroButton, CHARACTER_BUTTON, "Interface\\GroupFrame\\UI-Group-LeaderIcon", nil, function() ToggleCharacter("PaperDollFrame") end)
 helper("Spellbook", SpellbookMicroButton, SPELLBOOK_ABILITIES_BUTTON)
 helper("Talents", TalentMicroButton, TALENTS_BUTTON)
 if IS_WRATH_BUILD then helper("Achievement", AchievementMicroButton, ACHIEVEMENT_BUTTON) end
@@ -25,7 +28,7 @@ helper("Quest", QuestLogMicroButton, QUESTLOG_BUTTON)
 helper("Socials", SocialsMicroButton, SOCIAL_BUTTON)
 if IS_WRATH_BUILD then helper("PVP", PVPMicroButton, PLAYER_V_PLAYER, "Interface\\TargetingFrame\\UI-PVP-"..UnitFactionGroup("player"), {0, 5/8, 0, 5/8}, function() ToggleFrame(PVPFrame) end) end
 helper("LFG", LFGMicroButton, LFG_BUTTON)
-helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON)
+helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
 helper("Help", HelpMicroButton, HELP_BUTTON)
 
 
