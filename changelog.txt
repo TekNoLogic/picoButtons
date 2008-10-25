@@ -1,3 +1,8 @@
+3.0.2.4-Release
+    Remove 2.4.3 compat
+    Fix Char and Menu buttons on wrath... why the fuck is Blue using OnMouseUp now?
+    Embed update
+
 3.0.1.3-Beta
     Make compatible with both live and beta clients
     Add PvP button (Wrath)
