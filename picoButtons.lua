@@ -9,6 +9,7 @@ local function helper(title, button, label, icon, coords, click)
 		type = "launcher",
 		icon = icon or "Interface\\Buttons\\UI-MicroButton-"..title.."-Up",
 		texcoord = coords or (not icon and microcoord),
+		iconCoords = coords or (not icon and microcoord),
 		OnClick = click or button:GetScript("OnClick"),
 		label = label,
 	})
