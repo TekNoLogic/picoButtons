@@ -1,3 +1,6 @@
+3.0.9.5-Release
+    Add support for iconCoords, seems clad picked that key name in NinjaPanel
+
 3.0.2.4-Release
     Remove 2.4.3 compat
     Fix Char and Menu buttons on wrath... why the fuck is Blue using OnMouseUp now?
