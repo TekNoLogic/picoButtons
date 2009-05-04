@@ -1,3 +1,6 @@
+3.1.0.6-Release
+    Fucking PvPtards
+
 3.0.9.5-Release
     Add support for iconCoords, seems clad picked that key name in NinjaPanel
 
