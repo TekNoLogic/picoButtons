@@ -1,4 +1,6 @@
 
+local THREETHREE = select(4, GetBuildInfo()) >= 30300
+
 local ldb = LibStub:GetLibrary("LibDataBroker-1.1")
 local microcoord = {0, 1, 22/64, 1}
 
@@ -27,7 +29,7 @@ helper("Achievement", AchievementMicroButton, ACHIEVEMENT_BUTTON)
 helper("Quest", QuestLogMicroButton, QUESTLOG_BUTTON)
 helper("Socials", SocialsMicroButton, SOCIAL_BUTTON)
 helper("PVP", PVPMicroButton, PLAYER_V_PLAYER, "Interface\\TargetingFrame\\UI-PVP-"..UnitFactionGroup("player"), {0, 5/8, 0, 5/8}, function() ToggleFrame(PVPParentFrame) end)
-helper("LFG", LFGMicroButton, LFG_BUTTON)
+helper(THREETHREE and "LFD" or "LFG", THREETHREE and LFDMicroButton or LFGMicroButton, THREETHREE and DUNGEONS_BUTTON or LFG_BUTTON, "Interface\\Buttons\\UI-MicroButton-LFG-Up", microcoord)
 helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
 helper("Help", HelpMicroButton, HELP_BUTTON)
 
