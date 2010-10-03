@@ -1,4 +1,6 @@
 
+local IHASCAT = select(4, GetBuildInfo()) >= 40000
+
 local ldb = LibStub:GetLibrary("LibDataBroker-1.1")
 local microcoord = {0, 1, 22/64, 1}
 
@@ -25,7 +27,8 @@ helper("Spellbook", SpellbookMicroButton, SPELLBOOK_ABILITIES_BUTTON)
 helper("Talents", TalentMicroButton, TALENTS_BUTTON)
 helper("Achievement", AchievementMicroButton, ACHIEVEMENT_BUTTON)
 helper("Quest", QuestLogMicroButton, QUESTLOG_BUTTON)
-helper("Socials", SocialsMicroButton, SOCIAL_BUTTON)
+if IHASCAT then helper("Guild", GuildMicroButton, GUILD, "Interface\\Buttons\\UI-MicroButton-Socials-Up", microcoord)
+else helper("Socials", SocialsMicroButton, SOCIAL_BUTTON) end
 helper("PVP", PVPMicroButton, PLAYER_V_PLAYER, "Interface\\TargetingFrame\\UI-PVP-"..UnitFactionGroup("player"), {0, 5/8, 0, 5/8}, function() ToggleFrame(PVPParentFrame) end)
 helper("LFD", LFDMicroButton, DUNGEONS_BUTTON, "Interface\\Buttons\\UI-MicroButton-LFG-Up", microcoord)
 helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
