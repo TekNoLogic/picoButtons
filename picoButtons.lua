@@ -1,5 +1,5 @@
 
-local IHASCAT = select(4, GetBuildInfo()) >= 40000
+local IHASFOURTWO = select(4, GetBuildInfo()) >= 40200
 
 local ldb = LibStub:GetLibrary("LibDataBroker-1.1")
 local microcoord = {0, 1, 22/64, 1}
@@ -30,6 +30,12 @@ helper("Quest", QuestLogMicroButton, QUESTLOG_BUTTON)
 helper("Guild", GuildMicroButton, GUILD, "Interface\\Buttons\\UI-MicroButton-Socials-Up", microcoord)
 helper("PVP", PVPMicroButton, PLAYER_V_PLAYER, "Interface\\TargetingFrame\\UI-PVP-"..UnitFactionGroup("player"), {0, 5/8, 0, 5/8}, TogglePVPFrame)
 helper("LFD", LFDMicroButton, DUNGEONS_BUTTON, "Interface\\Buttons\\UI-MicroButton-LFG-Up", microcoord)
+
+if IHASFOURTWO then
+	helper("EJ", EJMicroButton, ENCOUNTER_JOURNAL)
+	helper("Raid", RaidMicroButton, RAID)
+end
+
 helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
 helper("Help", HelpMicroButton, HELP_BUTTON)
 
