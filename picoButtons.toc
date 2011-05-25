@@ -10,6 +10,7 @@
 
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: delayed
+## X-LoadOn-InterfaceOptions: picoButtons
 
 LibStub.lua
 tekKonfigAboutPanel.lua
