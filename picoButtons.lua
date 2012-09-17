@@ -1,4 +1,7 @@
 
+local myname, ns = ...
+
+
 local IHASFOURTWO = select(4, GetBuildInfo()) >= 40200
 
 local ldb = LibStub:GetLibrary("LibDataBroker-1.1")
@@ -38,10 +41,3 @@ end
 
 helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
 helper("Help", HelpMicroButton, HELP_BUTTON)
-
-
----------------------------
---      About panel      --
----------------------------
-
-local about = LibStub("tekKonfig-AboutPanel").new(nil, "picoButtons")
