@@ -10,10 +10,8 @@
 
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Always: delayed
-## X-LoadOn-InterfaceOptions: picoButtons
 
 LibStub.lua
-tekKonfigAboutPanel.lua
 CallbackHandler-1.0.lua
 LibDataBroker-1.1\LibDataBroker-1.1.lua
 
