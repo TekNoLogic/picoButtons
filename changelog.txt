@@ -1,3 +1,7 @@
+6.0.0.13-Beta
+    New buttons in WoD
+    Kill the about panel
+
 5.0.1.12-Release
     Tagging release version
 
@@ -36,4 +40,3 @@
 
 2.4.3.1-Beta
     And so it begins...
-
