@@ -39,27 +39,13 @@ helper("Quest", QuestLogMicroButton, QUESTLOG_BUTTON)
 helper("Guild", GuildMicroButton, GUILD,
        "Interface\\Buttons\\UI-MicroButton-Socials-Up", microcoord)
 
-if ns.isWOD then
-  helper("LFG", LFDMicroButton, DUNGEONS_BUTTON)
+helper("LFG", LFDMicroButton, DUNGEONS_BUTTON)
 
-  helper("Mounts", CompanionsMicroButton, COLLECTIONS)
-
-else
-  helper("PVP", PVPMicroButton, PLAYER_V_PLAYER,
-         "Interface\\TargetingFrame\\UI-PVP-"..UnitFactionGroup("player"),
-         {0, 5/8, 0, 5/8}, TogglePVPFrame)
-
-  helper("LFD", LFDMicroButton, DUNGEONS_BUTTON,
-         "Interface\\Buttons\\UI-MicroButton-LFG-Up", microcoord)
-end
+helper("Mounts", CompanionsMicroButton, COLLECTIONS)
 
 helper("EJ", EJMicroButton, ENCOUNTER_JOURNAL)
 
-if ns.isWOD then
-  helper("BStore", StoreMicroButton, ENCOUNTER_JOURNAL)
-else
-  helper("Mounts", CompanionsMicroButton, MOUNTS_AND_PETS)
-end
+helper("BStore", StoreMicroButton, ENCOUNTER_JOURNAL)
 
 helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
 
