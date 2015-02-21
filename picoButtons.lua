@@ -8,7 +8,8 @@ local microcoord = {0, 1, 22/64, 1}
 
 local i = 0
 local function helper(title, button, label, icon, coords, click)
-  ldb:NewDataObject(i.. " MicroButton "..title, {
+	local name = string.format("%02d MicroButton %s", i, title)
+  ldb:NewDataObject(name, {
     type = "launcher",
     icon = icon or "Interface\\Buttons\\UI-MicroButton-"..title.."-Up",
     texcoord = coords or (not icon and microcoord),
