@@ -41,12 +41,14 @@ helper("Guild", GuildMicroButton, GUILD,
 
 helper("LFG", LFDMicroButton, DUNGEONS_BUTTON)
 
-helper("Mounts", CompanionsMicroButton, COLLECTIONS)
+if ns.is_six_one then
+	helper("Mounts", CollectionsMicroButton, COLLECTIONS)
+else
+	helper("Mounts", CompanionsMicroButton, COLLECTIONS)
+end
 
 helper("EJ", EJMicroButton, ENCOUNTER_JOURNAL)
 
 helper("BStore", StoreMicroButton, ENCOUNTER_JOURNAL)
 
 helper("MainMenu", MainMenuMicroButton, MAINMENU_BUTTON, nil, nil, mainmenu)
-
-helper("Help", HelpMicroButton, HELP_BUTTON)
